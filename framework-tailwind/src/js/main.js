@@ -1,5 +1,5 @@
 import "../scss/styles.scss";
-import * as bootstrap from "bootstrap";
+// import * as bootstrap from "bootstrap";
 
 import { cardsTowns, updateFav } from "./components/card-town";
 import { showAlert, Types } from "./components/alert";
@@ -9,12 +9,12 @@ console.log("main.js loaded");
 const toastTrigger = document.getElementById("liveToastBtn");
 const toastLiveExample = document.getElementById("liveToast");
 
-const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
-if (toastTrigger) {
-  toastTrigger.addEventListener("click", () => {
-    toastBootstrap.show();
-  });
-}
+// const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+// if (toastTrigger) {
+//   toastTrigger.addEventListener("click", () => {
+//     toastBootstrap.show();
+//   });
+// }
 
 const btnSearch = document.getElementById("button-search");
 const inputSearch = document.getElementById("input-search");

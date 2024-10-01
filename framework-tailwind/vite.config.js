@@ -6,7 +6,6 @@ export default {
     outDir: '../dist'
   },
   server: {
-    port: 6969
-  },
-  envDir: '../'
+    port: 6968
+  }
 }

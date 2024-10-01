@@ -1,4 +1,4 @@
-import * as bootstrap from "bootstrap";
+// import * as bootstrap from "bootstrap";
 
 import { getIcon, getIconWeather } from "./services/svg.service";
 
@@ -108,7 +108,6 @@ export async function searchTowns(search) {
  * @return {Weather} Temps de la ville
  */
 export async function getWeather(lat, long) {
-  console.log('process', import.meta.env.OPENWEATHER_API);
   try {
     const request = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&lang=fr&appid=${import.meta.env.VITE_OPENWEATHER_API}`
@@ -226,11 +225,11 @@ export async function getDetailTownAndWeather(town, weather) {
         </div>
       </div>`;
 
-  const myModal = new bootstrap.Modal("#modal-weather-detail", {
-    backdrop: true,
-  });
+//   const myModal = new bootstrap.Modal("#modal-weather-detail", {
+//     backdrop: true,
+//   });
 
-  myModal.show();
+//   myModal.show();
 }
 
 /**
