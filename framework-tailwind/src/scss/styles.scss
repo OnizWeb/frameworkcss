@@ -73,3 +73,39 @@ body {
     opacity: 1;
   }
 }
+
+.alert-red {
+  @apply bg-red-100 border-red-400 text-red-700;
+}
+
+.alert-red-close {
+  @apply text-red-700;
+}
+
+.alert-green {
+  @apply bg-green-100 border-green-400 text-green-700;
+}
+
+.alert-green-close {
+  @apply text-green-700;
+}
+
+
+.alert-orange {
+  @apply bg-orange-100 border-orange-400 text-orange-700;
+}
+
+.alert-orange-close {
+  @apply text-orange-700;
+}
+
+
+.alert-blue {
+  @apply bg-blue-100 border-blue-400 text-blue-700;
+}
+
+.alert-blue-close {
+  @apply text-blue-700;
+}
+
+

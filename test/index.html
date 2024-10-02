@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formation Boostrap</title>
+    <script src="index.js" type="module"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Logo</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./form.html">Fomulaire</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Menu déroulant
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <button class="dropdown-item" id="liveToastBtn">
+                      Afficher un toast
+                    </button>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Autre action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Action séparée</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true"
+                  >Lien désactivé</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container-lg my-2">
+      <h1>Installation Bootstrap</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+        dolorum at mollitia itaque explicabo hic commodi accusantium doloribus
+        quasi culpa. Adipisci praesentium numquam totam commodi ipsam tempora,
+        eum fuga atque.
+      </p>
+      <button type="button" class="btn btn-primary">Boutton de base</button>
+      <div class="d-flex gap-3 mt-3">
+        <div class="card" style="width: 18rem">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Titre</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              aliquam incidunt cum illum officia vel cumque.
+            </p>
+            <a href="#" class="btn btn-primary">Voir plus</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Titre</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              aliquam incidunt cum illum officia vel cumque.
+            </p>
+            <a href="#" class="btn btn-primary">Voir plus</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Titre</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              aliquam incidunt cum illum officia vel cumque.
+            </p>
+            <a href="#" class="btn btn-primary">Voir plus</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="https://picsum.photos/200" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Titre</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              aliquam incidunt cum illum officia vel cumque.
+            </p>
+            <a href="#" class="btn btn-primary">Voir plus</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="liveToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Hello, ceci est un toast !</div>
+          <button
+            type="button"
+            class="btn-close me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

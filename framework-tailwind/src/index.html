@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="bg-white">
-      <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav class="mx-auto flex max-w-full items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
@@ -45,9 +45,9 @@
           <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
           <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
         </div>
-        <form id="form-search" class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <input type="text" name="price" id="input-search"  class="block rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="0.00">
-          <button id="button-search" type="submit">Rechercher</button>
+        <form id="form-search" class="lg:flex lg:flex-1 lg:justify-end">
+          <input type="text" name="price" id="input-search"  class=" mx-2 block rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Lille">
+          <button id="button-search" class=" mx-2 font-bold py-2 px-4 rounded bg-blue-500 text-white hover:bg-blue-700" type="submit">Rechercher</button>
         </form>
       </nav>
       <!-- Mobile menu, show/hide based on menu open state. -->
@@ -86,7 +86,10 @@
                 <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
               </div>
               <div class="py-6">
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
+                <form id="form-search" class="lg:flex lg:flex-1 lg:justify-end">
+                  <input type="text" name="town" id="input-search"  class=" mx-2 block rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Lille">
+                  <button id="button-search" class=" my-2 font-bold py-2 px-4 rounded bg-blue-500 text-white hover:bg-blue-700" type="submit">Rechercher</button>
+                </form>
               </div>
             </div>
           </div>

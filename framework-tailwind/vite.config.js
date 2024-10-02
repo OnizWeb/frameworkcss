@@ -7,5 +7,6 @@ export default {
   },
   server: {
     port: 6968
-  }
+  },
+  envDir: '../'
 }
